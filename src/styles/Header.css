@@ -1,0 +1,26 @@
+.header-nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header-nav-logo{
+    width: 20%;
+    max-width: 190px;
+}
+
+.header-nav-logo > img{
+    width: 100%;
+}
+
+.header-nav-link > a{
+    font-size: 22px;
+    padding-left: 75px;
+    color: #FF6060;
+    font-weight: 500;
+    text-decoration: none;
+}
+
+.header-nav-link > a:hover{
+    text-decoration: underline;
+}
