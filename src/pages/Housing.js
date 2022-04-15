@@ -1,7 +1,8 @@
-//import { useParams } from 'react-router-dom'
+import { useParams } from 'react-router-dom'
 
 function HousingCard() {
-  //const { housingParams } = useParams()
+  const data = useParams()
+  console.log(data)
     return (
       <article className="Housing">
         <h2>Titre du logement</h2>
