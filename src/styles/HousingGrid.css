@@ -1,4 +1,8 @@
 .housing-grid{
     display: grid;
     grid-template-columns: repeat(3, 1fr);
+    gap: 50px;
+    background: #F7F7F7;
+    border-radius: 25px;
+    padding: 50px;
 }

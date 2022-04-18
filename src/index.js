@@ -8,6 +8,7 @@ import Home from "./pages/Home";
 import About from "./pages/About";
 import Error from "./pages/Error";
 import Housing from "./pages/Housing"
+import Footer from "./components/Footer";
 
 const container = document.getElementById('root');
 const root = createRoot(container);
@@ -20,4 +21,5 @@ root.render(
       <Route path="housing/:housingId" element={<Housing />}/>
       <Route path="*" element={<Error />} />
     </Routes>
+    <Footer />
   </BrowserRouter>);

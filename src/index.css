@@ -1,6 +1,5 @@
 body {
   margin: 0;
-  padding: 30px 100px;
   font-weight: 400;
   font-family: 'Montserrat', sans-serif;
   color: #FF6060;
@@ -9,4 +8,21 @@ body {
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
+}
+
+main{
+  padding: 0 100px;
+}
+
+footer{
+  background-color: black;
+  color: white;
+  margin-top: 60px;
+  text-align: center;
+  padding: 50px 0 15px;
+}
+
+footer > img{
+  width: 40%;
+  max-width: 100px;
 }

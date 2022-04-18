@@ -1,11 +1,10 @@
 import '../styles/Banner.css'
-import banner from '../assets/home-banner.png'
 
-function Banner() {
+function Banner(props) {
     return (
         <section className='banner'>
-            <img src={banner} alt='home background'/>
-            <h1>Chez vous, partout et ailleurs</h1>
+            <img src={props.img} alt=''/>
+            <h1>{props.title}</h1>
         </section>
     )
 }

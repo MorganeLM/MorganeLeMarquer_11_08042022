@@ -1,13 +1,14 @@
 import Banner from "../components/Banner";
+import banner from '../assets/home-banner.png'
 import HousingGrid from "../components/HousingGrid";
 
 function Home() {
 
   return (
-    <div className="Home">
-      <Banner />
+    <main className="Home">
+      <Banner img={banner} title="Chez vous, partout et ailleurs" />
       <HousingGrid />
-    </div>
+    </main>
   );
 }
 

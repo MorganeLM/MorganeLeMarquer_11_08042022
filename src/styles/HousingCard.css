@@ -1,0 +1,9 @@
+.housing-card{
+    width: 100%;
+}
+
+.housing-card > img{
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
