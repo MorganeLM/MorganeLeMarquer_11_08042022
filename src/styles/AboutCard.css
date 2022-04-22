@@ -1,3 +1,36 @@
+h2, i{
+    margin: 0;
+    font-size: 24px;
+    font-weight: 500;
+}
+
+i{
+    padding-right: 14px;
+    padding-top: 3px;
+    -webkit-text-stroke: 2px white;
+}
+
 .about-card{
+    margin: 0 100px 30px;
+}
+
+
+.about-card header{
+    background: #FF6060;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    padding: 8px 18px;
+    border-radius: 5px;
+}
+
+.about-card p{
     background: #F6F6F6;
+    margin: 0;
+    padding: 36px 18px 19px;
+    position: relative;
+    top: -10px;
+    z-index: -1;
+    border-radius: 5px;
+    font-size: 24px;
 }

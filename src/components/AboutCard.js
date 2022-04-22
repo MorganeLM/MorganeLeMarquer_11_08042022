@@ -1,10 +1,22 @@
 import '../styles/AboutCard.css'
+import { useState } from 'react'
 
 function AboutCard(props) {
+  const [isOpen, setIsOpen] = useState(props.isOpen);
+  function toggleIsOpen(){
+    setIsOpen(!isOpen)
+    console.log(isOpen)
+  }
+
   return (
     <article className="about-card">
-        <h2>{props.title}</h2>
-        <p>{props.description}</p>
+        <header onClick={() => toggleIsOpen()}>
+          <h2>{props.title}</h2>
+          {!isOpen && (<i className="las la-angle-down"></i>)}
+          {isOpen && (<i className="las la-angle-up"></i>)}
+        </header>
+
+        {isOpen && (<p>{props.description}</p>)}
     </article>
   );
 }
