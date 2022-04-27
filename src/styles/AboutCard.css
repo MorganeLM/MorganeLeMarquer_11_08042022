@@ -25,6 +25,7 @@ i{
 }
 
 .about-card p{
+    white-space: pre-wrap;
     background: #F6F6F6;
     margin: 0;
     padding: 36px 18px 19px;
