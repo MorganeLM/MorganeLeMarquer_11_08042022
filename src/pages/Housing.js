@@ -1,4 +1,4 @@
-import { useParams } from 'react-router-dom';
+import { useParams, useNavigate } from 'react-router-dom';
 import { useState, useEffect } from 'react';
 import '../styles/Housing.css';
 import AboutCard from "../components/AboutCard";
@@ -7,6 +7,7 @@ import AboutCard from "../components/AboutCard";
 function HousingCard() {
   const params = useParams()
   const [housingData, loadData] = useState([])
+  const navigate = useNavigate();
     
   useEffect(() => {
       fetch("http://localhost:3000/logements.json").then(response => {
@@ -16,8 +17,7 @@ function HousingCard() {
               if(filteredData.length > 0){
                 loadData(filteredData);
               }else{
-                //redirect
-                console.log('redirect')
+                navigate("*", { replace: true });
               }
           }).catch(err => {
               console.log(err);
@@ -25,13 +25,12 @@ function HousingCard() {
       }, [])
 
       function transformList(list){
-        //let htmlList = list.map(elt =><Fragment> <p>{elt}</p></Fragment>);
         let htmlList = list.map(elt => `${elt} \n`);
         let reducedList = htmlList.reduce((previousValue, currentValue) => previousValue + currentValue, '')
         return reducedList;
       }
 
-      let maxStars = 5;
+      const maxStars = 5;
 
    return (
      <main>
@@ -62,12 +61,12 @@ function HousingCard() {
                   <div className="housing-content-host-rating">
                     { Array.apply(null, { length: housing.rating }).map((e, i) => (
                         <span className="red-star" key={i}>
-                          <i class="las la-star"></i>
+                          <i className="las la-star"></i>
                         </span>
                       )) }
                     { Array.apply(null, { length: maxStars - (housing.rating) }).map((e, i) => (
                         <span className="grey-star" key={i}>
-                          <i class="las la-star"></i>
+                          <i className="las la-star"></i>
                         </span>
                       )) }
                   </div>
