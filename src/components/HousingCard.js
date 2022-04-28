@@ -5,10 +5,9 @@ function HousingCard(props) {
 
     return (
         <article className='housing-card'>
-            <div>
-                <img src={housing.cover} alt="housing image"/>
-            </div>
-            {housing.title}
+            <img src={housing.cover} alt=''/>
+            <h3>{housing.title}</h3>
+            <div className='housing-card-filter'></div>
         </article>
     )
 }
