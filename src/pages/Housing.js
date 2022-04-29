@@ -1,6 +1,7 @@
 import { useParams, useNavigate } from 'react-router-dom';
 import { useState, useEffect } from 'react';
 import '../styles/Housing.css';
+import Gallery from "../components/Gallery";
 import AboutCard from "../components/AboutCard";
 
 
@@ -36,10 +37,7 @@ function HousingCard() {
      <main>
         {housingData.map((housing) => (
             <article className="housing" key={housing.id}>
-              <div className="housing-banner">
-                <img src={housing.cover} alt=''/>
-                <span>1/4</span>
-              </div>
+              <Gallery cover={housing.cover} pictures={housing.pictures} />
 
               <div className="housing-content">
                 <div className="housing-content-info">

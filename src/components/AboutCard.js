@@ -5,7 +5,6 @@ function AboutCard(props) {
   const [isOpen, setIsOpen] = useState(props.isOpen);
   function toggleIsOpen(){
     setIsOpen(!isOpen)
-    console.log(isOpen)
   }
 
   return (
