@@ -1,0 +1,25 @@
+.error{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.error h1{
+    font-size: 17em;
+    font-weight: 700;
+    margin: 0;
+}
+
+.error p{
+    font-size: 32px;
+    font-weight: 500;
+    margin: 0;
+}
+
+.error a{
+    font-size: 18px;
+    font-weight: 500;
+    margin: 0;
+    padding-top: 80px;
+    color: #FF6060;
+}
