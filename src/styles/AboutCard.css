@@ -35,3 +35,30 @@ i{
     border-radius: 5px;
     font-size: 24px;
 }
+
+@media screen and (max-width: 976px) {
+    .about-card{
+        margin: 0 0 20px;
+    }
+
+    h2, i{
+        font-size: 18px;
+    }
+
+    .about-card p{
+        padding: 30px 18px 35px;
+        font-size: 16px;
+    }
+    
+}
+  
+@media screen and (max-width: 600px) {
+    h2, i{
+        font-size: 13px;
+    }
+
+    .about-card p{
+        padding: 26px 18px 40px;
+        font-size: 12px;
+    }
+}

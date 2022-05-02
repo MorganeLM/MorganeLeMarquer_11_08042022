@@ -1,4 +1,5 @@
 .error{
+    padding: 80px 0;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -20,6 +21,27 @@
     font-size: 18px;
     font-weight: 500;
     margin: 0;
-    padding-top: 80px;
+    padding-top: 180px;
     color: #FF6060;
+}
+
+
+@media screen and (max-width: 976px) {
+    .error h1{
+        font-size: 96px;
+    }
+    
+    .error p{
+        font-size: 18px;
+        text-align: center;
+    }
+    
+    .error a{
+        font-size: 14px;
+        padding-top: 130px;
+    }
+
+    .error{
+        padding: 200px 20px;
+    }
 }

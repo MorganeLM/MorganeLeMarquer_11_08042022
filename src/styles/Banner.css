@@ -3,6 +3,7 @@
     height: 225px;
     width: 100%;
     border-radius: 20px;
+    overflow: hidden;
     margin: 40px auto;
     background: #000;
 }
@@ -12,7 +13,6 @@
     height: 100%;
     opacity: 0.7;
     object-fit: cover;
-    border-radius: 20px;
 }
 
 .banner > h1{
@@ -26,4 +26,25 @@
     left: 50%;
     transform: translate(-50%, -50%);
     width: 80%;
+}
+
+
+@media screen and (max-width: 976px) {
+   
+}
+  
+  @media screen and (max-width: 600px) {
+    .banner > h1{
+        text-align: start;
+        font-size: 24px;
+        width: 70%;
+        left: 20px;
+        transform: translate(0%, -50%);
+    }
+
+    .banner{
+        height: 111px;
+        margin: 0px auto 15px;
+        border-radius: 10px;
+    }
 }

@@ -107,3 +107,96 @@
     -webkit-text-stroke: none;
     font-size: 30px;
 }
+
+
+@media screen and (max-width: 976px) {
+    .housing-content-host-rating i {
+        font-size: 27px;
+    }
+}
+
+@media screen and (max-width: 750px) {
+    .housing-description-wrapper {
+        grid-template-columns: 1fr;
+        gap: 20px;
+        margin-top: 5px;
+      }
+
+      .housing-content{
+          display: initial;
+      }
+
+      .housing-content-host{
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
+          flex-direction: row-reverse;
+      }
+
+      .housing-content-host-info {
+        display: flex;
+        justify-content: space-between;
+        align-content: center;
+        height: fit-content;
+      }
+
+      .housing-content-host-info p{
+        margin: 0;
+        line-height: normal;
+        font-size: 12px;
+        padding-top: 4px;
+    }
+
+    .housing-content-host-info-picture{
+        width: 32px;
+        height: 32px;
+        margin: 2px 0 15px 10px;
+    }
+    
+    .housing-content-info{
+        margin-top: 15px;
+    }
+
+    .housing-content-info h2{
+        font-size: 18px;
+    }
+    
+    .housing-content-info p{
+        font-size: 14px;
+    }
+
+    .housing-content-info-tags span{   
+        border-radius: 5px;
+        height: 18px;
+        font-size: 10px;
+    }
+
+    .housing-content-host-rating{
+        margin-top: -8px;
+    }
+
+    .housing-content-host-rating i {
+        font-size: 22px;
+    }
+
+    .housing-description-wrapper .about-card header > h2 {
+        font-size: 13px;
+        margin-top: 3px;
+    }
+
+    .housing-description-wrapper .about-card header > i{
+        font-size: 18px;
+    }
+    
+    .housing-description-wrapper .about-card p{
+        font-size: 12px;
+        padding-bottom: 20px;
+        line-height: 17px;
+        padding-left: 12px;
+    }
+
+    .housing-description-wrapper .about-card header {
+        padding: 8px 12px;
+    }
+     
+}

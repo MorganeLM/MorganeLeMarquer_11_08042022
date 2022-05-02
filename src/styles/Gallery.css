@@ -42,3 +42,34 @@
 .gallery-nav-left{
     left: 10px;
 }
+
+
+@media screen and (max-width: 976px) {
+    .gallery-nav > i{
+        font-size: 4em;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .gallery{
+        height: 255px;
+        border-radius: 10px;
+    }
+
+    .gallery-counter{
+        display: none;
+    }
+    
+    .gallery-nav > i{
+        font-size: 1.5em;
+        padding: 0;
+    }
+    
+    .gallery-nav-right{
+        right: 5px;
+    }
+    
+    .gallery-nav-left{
+        left: 5px;
+    }
+}
