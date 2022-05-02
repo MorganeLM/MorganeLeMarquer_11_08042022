@@ -165,10 +165,18 @@
         font-size: 14px;
     }
 
+    .housing-content-info-tags{   
+        line-break: anywhere;
+        margin-bottom: 15px;
+    }
+
     .housing-content-info-tags span{   
         border-radius: 5px;
         height: 18px;
         font-size: 10px;
+        display: inline-block;
+        padding-bottom: 0px;
+        margin-bottom: 5px;
     }
 
     .housing-content-host-rating{
