@@ -23,7 +23,7 @@ function HousingCard() {
           }).catch(err => {
               console.log(err);
           });
-      }, [])
+      }, [navigate, params.housingId])
 
       function transformList(list){
         let htmlList = list.map(elt => `${elt} \n`);

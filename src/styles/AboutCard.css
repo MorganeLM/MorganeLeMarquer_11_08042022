@@ -18,6 +18,7 @@ i{
 .about-card header{
     background: #FF6060;
     color: white;
+    cursor: pointer;
     display: flex;
     justify-content: space-between;
     padding: 8px 18px;
