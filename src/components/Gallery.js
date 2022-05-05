@@ -7,7 +7,6 @@ function Gallery(props) {
     const indexMax = allImageSrc.length - 1;
     const areAtLeastTwoImages = indexMax > 0 ? true : false;
     let imageIndex = localStorage.getItem('index') || 0;
-    console.log('imageIndex', imageIndex)
     localStorage.setItem('index', 0);
     const [imageSrc, changeImage] = useState(allImageSrc[imageIndex]);
 
