@@ -1,7 +1,7 @@
-import '../styles/AboutCard.css'
+import '../styles/CollapseCard.css'
 import { useState } from 'react'
 
-function AboutCard(props) {
+function CollapseCard(props) {
   const [isOpen, setIsOpen] = useState(props.isOpen);
   function toggleIsOpen(){
     setIsOpen(!isOpen)
@@ -20,4 +20,4 @@ function AboutCard(props) {
   );
 }
 
-export default AboutCard;
+export default CollapseCard;

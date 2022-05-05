@@ -1,6 +1,6 @@
 import Banner from "../components/Banner";
 import banner from '../assets/about-banner.png';
-import AboutCard from "../components/AboutCard";
+import CollapseCard from "../components/CollapseCard";
 
 
 function About() {
@@ -33,7 +33,7 @@ function About() {
 
         <section>
             {cardContent.map((card) => (
-                <AboutCard key={card.title} title={card.title} description={card.description} isOpen={card.isOpen}/>
+                <CollapseCard key={card.title} title={card.title} description={card.description} isOpen={card.isOpen}/>
             ))}
         </section>
     </main>

@@ -2,7 +2,7 @@ import { useParams, useNavigate } from 'react-router-dom';
 import { useState, useEffect } from 'react';
 import '../styles/Housing.css';
 import Gallery from "../components/Gallery";
-import AboutCard from "../components/AboutCard";
+import CollapseCard from "../components/CollapseCard";
 
 
 function HousingCard() {
@@ -72,8 +72,8 @@ function HousingCard() {
               </div>
               
               <div className='housing-description-wrapper'>
-                <AboutCard title="description" description={housing.description}/>
-                <AboutCard title="équipements" description={transformList(housing.equipments)} />
+                <CollapseCard title="description" description={housing.description}/>
+                <CollapseCard title="équipements" description={transformList(housing.equipments)} />
               </div>
             </article>
         ))}
