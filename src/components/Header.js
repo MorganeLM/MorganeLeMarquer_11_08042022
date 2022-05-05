@@ -4,16 +4,16 @@ import logo from '../assets/logo/logo.png'
  
 function Header() {
     return (
-        <nav className='header-nav'>
+        <header className='header-nav'>
              <Link to="/" className='header-nav-logo'>
                  <img src={logo} alt='logo de Kasa'/>
              </Link>
             
-            <div className='header-nav-link'>
+            <nav className='header-nav-link'>
                 <Link to="/">Accueil</Link>
                 <Link to="/about">A propos</Link>
-            </div>
-        </nav>
+            </nav>
+        </header>
     )
 }
 
