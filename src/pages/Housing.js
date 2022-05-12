@@ -18,7 +18,7 @@ function HousingCard() {
               if(filteredData.length > 0){
                 loadData(filteredData);
               }else{
-                navigate("*");
+                navigate("*", {replace: true});
               }
           }).catch(err => {
               console.log(err);
